@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "entregastra",
+    "name": "Entregas Transporte",
     "slug": "entregastra",
-    "version": "1.0.0",
+    "version": "1.0.10",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/perro.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -21,10 +21,23 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.hocevar11.entregastra"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9564cafc-5b70-482d-9104-982f914f90e3"
+      }
+    },
+    "owner": "hocevar11",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/9564cafc-5b70-482d-9104-982f914f90e3"
     }
   }
 }
