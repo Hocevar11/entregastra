@@ -546,7 +546,6 @@ export const Main = () => {
         const mensaje = {titulo: 'Atencion', cuerpo: 'No hay facturas para enviar '+guia};
         setModalMsj(mensaje);
         setOpenModal(true);
-
         isLoading(false);
 
         return;
