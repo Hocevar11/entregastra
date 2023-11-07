@@ -453,8 +453,6 @@ export const Main = () => {
     //*************************************************************************
     const sendDataList = async () => {
       isLoading(true);
-
-      console.log('lo que sea');
        
       const groupedData = dataList.reduce((result, data) => {
         if (!result[data.reparto]) {
