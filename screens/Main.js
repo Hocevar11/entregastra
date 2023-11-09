@@ -454,6 +454,8 @@ export const Main = () => {
     const sendDataList = async () => {
       isLoading(true);
        
+      console.log('sexo');
+      
       const groupedData = dataList.reduce((result, data) => {
         if (!result[data.reparto]) {
           result[data.reparto] = [];
