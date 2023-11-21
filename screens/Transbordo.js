@@ -44,9 +44,6 @@ export const Transbordo = () => {
     const id    = 'toast1';
 
 
-    
-
-
     //Para la camara y permisos
     const [type, setType] = useState(CameraType.back);
     const [hasPermission, setHasPermission] = useState(null);
@@ -230,7 +227,7 @@ export const Transbordo = () => {
       try {
         const guiaId = data.substring(3);        
 
-        const guiaExistente = dataList.find((reparto) =>  reparto.reporg === guiaId);
+        const guiaExistente = dataList2.find((reparto) =>  reparto.reporg === guiaId);
         if(guiaExistente){
           isLoading(false);
 
