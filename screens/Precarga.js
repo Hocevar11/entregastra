@@ -206,7 +206,7 @@ export const Precarga = () => {
       try {
         const guiaId = data.substring(3);        
 
-        const guiaExistente = dataList.find((reparto) =>  reparto.reporg === guiaId);
+        const guiaExistente = dataList2.find((reparto) =>  reparto.reporg === guiaId);
         if(guiaExistente){
           isLoading(false);
           alert('La guia ya ha sido descargada');

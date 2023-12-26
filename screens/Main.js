@@ -557,23 +557,14 @@ export const Main = () => {
         setOpenModal(true);
         return;
       }
-
-    
-      //facturasParaEnviar = facturasParaEnviar.concat(verificadas);
     
       try {
-        //const formData = new FormData();
-
-        //formData.append('facturas', JSON.stringify(facturasParaEnviar));
 
         const response = await axios.post(host + 'bultos', verificadas);
     
         if (response.data.success) {
 
-          //const facturasNoEnviadas = dataList.filter((factura) => factura.verificado === false);
-
           const facturasNoEnviadas = dataList.filter((factura) => !verificadas.includes(factura));
-
 
           setDataList(facturasNoEnviadas);
           isLoading(false);
@@ -581,6 +572,7 @@ export const Main = () => {
           const mensaje = {titulo: 'Exito', cuerpo: response.data.mensaje};
           setModalMsj(mensaje);
           setOpenModal(true);
+
         } else {
           console.log(response.data);
           isLoading(false);
@@ -972,9 +964,13 @@ export const Main = () => {
                 <Button icon='barcode-scan' mode='elevated'textColor='black' compact ={true} onPress={() => escanearGuia()}>
                   Escanear Guias
                 </Button>
-
-              </View>
               
+              </View>
+
+              <View style = {{marginTop: 20, bottom: 0, left: 0, right: 0, padding: 10, alignItems: 'center'}}>
+                  <Text style = {{color: '#cccccc', fontSize: 14, fontWeight: 'bold'}}>Ver. 1.0.12</Text>
+              </View>
+
 
           </View>
           </ScrollView>
